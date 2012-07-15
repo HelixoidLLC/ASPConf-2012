@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Step 2</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script type="text/javascript" src="Scripts/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="Scripts/underscore.js"></script>
+    <script type="text/javascript" src="Scripts/json2.js"></script>
+    <script type="text/javascript" src="js/jsrender.js"></script>
+    <script type="text/javascript" src="Scripts/backbone.js"></script>
+    <script type="text/javascript" src="js/backbone.support.js"></script>
+    <script type="text/javascript" src="app2/router.js"></script>
+    <script type="text/javascript" src="app2/views/homeView.js"></script>
+    <script type="text/javascript" src="app2/views/tasksView.js"></script>
+    <script id='tmpl-homeView' type='text/template'>
+        <div id="home" style="border: 2px; background: #FF0097;"><h2>Welcome to "Honey-do-list"</h2></div>
+    </script>
+    <script id='tmpl-tasksView' type='text/template'>
+        <div id="tasks" style="border: 2px; background: #8CBF26; margin-top: 20px;">
+            <form>
+                <label>Task</label><input id="task"/><button id="sendTask" type="submit">Honey, Please do</button>
+                <h3>Tasks</h3>
+                <div>
+                    <ol id="tasksList">
+                        <li>None</li>
+                    </ol>
+                </div>
+            </form>
+        </div>
+    </script>
+    <script id="tmpl-tasks" type="text/x-jsrender">
+		<li><em>{{>Subject}}</em></li>
+    </script>
+</head>
+    <body>
+        <div>
+            <a id="mnuHome" href="#">Home</a> | 
+            <a id="mnuTasks" href="#tasks">Tasks List</a>
+        </div>
+        <div id="viewPort">
+            
+        </div>
+    </body>
+</html>

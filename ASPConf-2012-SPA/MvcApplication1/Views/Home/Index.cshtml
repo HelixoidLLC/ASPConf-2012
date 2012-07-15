@@ -1,0 +1,27 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Honey-do-list</title>
+    @Styles.Render("~/all-styles")
+    @Scripts.Render("~/framework-js")
+    <script type="text/javascript" src="../../app3/boot.js"></script>
+</head>
+<body>
+    <div>
+        <div>
+            <a id="mnuHome" href="#">Home</a> | 
+            <a id="mnuTasks" href="#tasks">Tasks List</a>
+        </div>
+        <div id="viewPort">
+            
+        </div>
+    </div>
+</body>
+</html>

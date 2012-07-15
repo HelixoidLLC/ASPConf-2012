@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<link rel="stylesheet" type="text/css" href="../../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../../content/toastr.css" />
+<link rel="stylesheet" type="text/css" href="../../content/toastr-responsive.css" />
+
+<script type="text/javascript" src="../../Scripts/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../../Scripts/knockout-2.1.0.debug.js"></script>
+<script type="text/javascript" src="../../Scripts/json2.js"></script>
+<script type="text/javascript" src="../../Scripts/jquery.signalR-0.5.2.js"></script>
+<script src="signalr/hubs" type="text/javascript"></script>
+<script type="text/javascript" src="../../Scripts/toastr.js"></script>
+
+<script type="text/javascript" src="../../js/viewModel.js"></script>
+
+<h2>Store that has everything!</h2>
+<div id="content">
+    <p>
+        <label>Item</label><input data-bind="value: item"/><button data-bind="click: buyItem">Buy</button>
+    </p>
+    <p>
+        <table style="border-collapse: collapse" border="1">
+            <thead><tr><td>Sender</td><td>Message</td></tr></thead>
+            <tbody data-bind="foreach: echoMessages()">
+                <tr>
+                    <td data-bind="text: message" />
+                    <td data-bind="text: sender" />
+                </tr>
+            </tbody>
+        </table>
+    </p>
+</div>
