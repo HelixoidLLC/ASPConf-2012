@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using MvcApplication1.Models;
 
 namespace MvcApplication1.Controllers
 {
@@ -12,5 +13,14 @@ namespace MvcApplication1.Controllers
             return View();
         }
 
+        //
+        // GET: /Home/Hello
+
+        public ActionResult Hello()
+        {
+            var serverInfo = new ServerInfo {Id = "Smart Server "};
+
+            return View(serverInfo);
+        }
     }
 }

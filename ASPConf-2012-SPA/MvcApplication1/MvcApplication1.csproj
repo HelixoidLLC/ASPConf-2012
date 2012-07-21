@@ -122,6 +122,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ServerInfo.cs" />
     <Compile Include="Models\Task.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\TasksRepository.cs" />
@@ -139,6 +140,13 @@
     <Content Include="app3\templates\tasksView.tmpl.html" />
     <Content Include="app3\views\homeView.js" />
     <Content Include="app3\views\tasksView.js" />
+    <Content Include="app4\boot.js" />
+    <Content Include="app4\router.js" />
+    <Content Include="app4\templates\homeView.tmpl.html" />
+    <Content Include="app4\templates\task.tmpl.html" />
+    <Content Include="app4\templates\tasksView.tmpl.html" />
+    <Content Include="app4\views\homeView.js" />
+    <Content Include="app4\views\tasksView.js" />
     <Content Include="index3.html" />
     <Content Include="index2.html" />
     <Content Include="css\base.css" />
@@ -198,6 +206,7 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Hello.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

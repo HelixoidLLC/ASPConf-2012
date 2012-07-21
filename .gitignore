@@ -177,3 +177,6 @@ pip-log.txt
 /ASPConf-2012-ResponsiveCloud/MvcWebRole1/obj
 /ASPConf-2012-ResponsiveCloud/MvcWebRole1/Scripts
 /ASPConf-2012-ResponsiveCloud/MvcWebRole1/content
+/NuGet feed
+/ASPConf-2012-SPA-clean/packages
+/ASPConf-2012-SPA-clean\MvcApplication1/Scripts
